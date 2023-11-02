@@ -1,0 +1,8 @@
+<resources>
+	<string name="no_internet">No Internet connection</string>
+	<string name="update_not_found">No Updates Found!</string>
+	<string name="update_downloading">Downloading Update...</string>
+  <string name="update_title">New Update Available!</string>
+	<string name="update_download">Download</string>
+	<string name="update_close">Close</string>
+</resources>

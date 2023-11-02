@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:title="@string/pref_appearance">
+        <Preference
+            android:key="pref_ui_theme"
+            android:title="@string/pref_app_theme" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="pref_auto_theme_mode"
+            android:title="@string/pref_use_auto_theme" />
+        <Preference
+            android:key="pref_auto_theme_picker"
+            android:title="@string/settings_main_auto_theme_picker"
+            android:summary="@string/settings_main_auto_theme_picker_summary" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="pref_icon"
+            android:title="@string/pref_use_circular_icons" />
+    </PreferenceCategory>
+  <PreferenceCategory
+        android:title="@string/pref_update_category">
+  <Preference
+    android:title="@string/pref_update_preference"
+    android:key="checkForUpdates"
+    android:summary="@string/check_update_sum"/>
+	<ListPreference 
+		android:entries="@array/update_channel" 
+		android:title="@string/pref_update_list"
+		android:key="channel" 
+    android:defaultValue="stable"
+    android:summary="@string/select_version_app_update_sum"   
+		android:entryValues="@array/update_channel" />
+	<SwitchPreference
+		android:title="@string/pref_update_switch"
+		android:key="updates_on_startup"
+    android:summary="@string/update_dialog_sum"      
+		android:defaultValue="true"/>
+      </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/pref_general">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="pref_show_hidden"
+            android:title="@string/pref_show_hidden_files" />
+
+        <SwitchPreference
+            android:key="pref_keep_screen_on"
+            android:title="@string/pref_keep_screen_on" />
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/pref_general_decompiler">
+        <EditTextPreference
+            android:key="pref_decode_folder"
+            android:title="@string/pref_decode_folder" />
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/decoding_names"
+            android:entryValues="@array/decoding_values"
+            android:key="pref_decode_mode"
+            android:title="@string/pref_decode_mode" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/pref_general_recompile"
+       >
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="pref_use_aapt2"
+            android:title="@string/pref_use_aapt2" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="pref_copy_original_files"
+            android:summary="@string/pref_copy_original_files_summary"
+            android:title="@string/pref_copy_original_files" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="pref_debug_mode"
+            android:summary="@string/pref_debug_mode_summary"
+            android:title="@string/pref_debug_mode" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="pref_verbose_mode"
+            android:summary="@string/pref_verbose_mode_summary"
+            android:title="@string/pref_verbose_mode" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="pref_sign_apk"
+            android:title="@string/pref_sign_output_apk" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="pref_use_v2_signature"
+            android:title="@string/pref_use_v2_signature" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="pref_confirm_build"
+            android:title="@string/pref_confirm_build" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="pref_use_custom_sign"
+            android:summary="@string/pref_custom_signature_file_summary"
+            android:title="@string/pref_custom_signature_file" />
+        <com.mrikso.apkrepacker.ui.keydialog.KeystorePreference
+            android:key="pref_keystore_file"
+            android:summary="@string/signature_file_summary"
+            android:title="@string/signature_file" />
+        <!-- <com.mrikso.apkrepacker.ui.keydialog.GenKeystorePreference
+             android:title="@string/gen_key_title"
+             android:key="gen_key"
+             android:summary="@string/gen_key_summary"/>-->
+    </PreferenceCategory>
+</PreferenceScreen>

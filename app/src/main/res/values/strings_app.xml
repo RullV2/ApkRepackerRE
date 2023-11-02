@@ -1,0 +1,436 @@
+<resources>
+    <string name="app_name" translatable="false">Apk Repacker</string>
+    <string name="check_update_sum">check for the latest updates </string>
+    <string name="select_version_app_update_sum">select the beta or stable version of the app update </string>
+    <string name="update_dialog_sum">show update dialog on initial view </string>
+    <string name="about_licenses_html_style_light" translatable="false">
+        body {
+            background: white;
+            color: black;
+            font-family: sans-serif;
+            margin: 0;
+            overflow-wrap: break-word;
+            padding: 12px;
+        }
+        pre {
+            background: #eeeeee;
+            padding: 12px;
+            white-space: pre-wrap;
+        }
+        a, a:link, a:visited, a:hover, a:focus, a:active {
+            color: #4eaff5;
+        }
+    </string>
+    <string name="about_licenses_html_style_dark" translatable="false">
+        body {
+            background: #424242;
+            color: white;
+            font-family: sans-serif;
+            margin: 0;
+            overflow-wrap: break-word;
+            padding: 12px;
+        }
+        pre {
+            background: #303030;
+            padding: 12px;
+            white-space: pre-wrap;
+        }
+        a, a:link, a:visited, a:hover, a:focus, a:active {
+            color: #4eaff5;
+        }
+    </string>
+
+    <string name="title_activity_about">About</string>
+    <string name="about_version">Version: %s (%s)</string>
+    <string name="about_email_intent" translatable="false">About:Apk Repacker</string>
+    <string name="about_not_found_email">Email app hasn`t been found</string>
+    <string name="share_with">Share with</string>
+    <string name="projects_count">Projects: %d</string>
+
+    <string name="settings">Settings</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="pref_app_theme">App theme</string>
+
+    <string name="action_delete">Delete</string>
+    <string name="action_rename">Rename</string>
+    <string name="action_open_with">Open with</string>
+    <string name="action_open_in_editor">Open in editor</string>
+    <string name="action_search">Search</string>
+    <string name="action_copy">Copy</string>
+    <string name="action_move">Move</string>
+    <string name="action_send">Send</string>
+    <string name="action_sort">Sort</string>
+
+    <!--NAVIGATION-->
+    <string name="pref_appearance">Appearance</string>
+    <string name="pref_use_circular_icons">Use circular icons</string>
+    <string name="pref_general">General</string>
+    <string name="pref_hide_know_extensions">Hide extensions</string>
+    <string name="pref_show_last">Show last modified</string>
+    <string name="pref_show_file_sizes">Show file sizes</string>
+    <string name="install_app">Install</string>
+    <string name="dialog_install_app">Install app?</string>
+    <string name="decompile_app">Decompile</string>
+
+    <string name="output_directory_not_extsts">Output directory \'%1$s\' doesn`t exist and can not be created!</string>
+    <string name="output_directory_not_set">You must set output directory first!</string>
+    <string name="not_directory">\'%1$s\' is not a directory!</string>
+    <string name="decode_run_title">Decompiling...</string>
+    <string name="decompile_all">Decompile all</string>
+    <string name="decompile_res">Decompile resources</string>
+    <string name="decompile_dex">Decompile classes.dex</string>
+    <string name="app_build">Build</string>
+    <string name="action_about_project">Info</string>
+    <string name="project_list_is_empty">No projects</string>
+    <string name="translate_string">Translate String</string>
+    <string name="text_after_translation">Text after translation</string>
+    <string name="pref_general_decompiler">Decompiler</string>
+    <string name="pref_decode_folder">Decode Folder</string>
+    <string name="pref_use_aapt2">Use AAPT2</string>
+    <string name="pref_decode_mode">Decoding Mode</string>
+    <string name="pref_general_recompile">Recompile Apk</string>
+    <string name="pref_sign_output_apk">Signed output Apk</string>
+    <string name="pref_custom_signature_file">Custom signature file</string>
+    <string name="pref_custom_signature_file_summary">Use Custom signature file</string>
+    <string name="pref_debug_mode">Set apk as debuggable</string>
+    <string name="pref_debug_mode_summary">"Sets android:debuggable to \"true\" in the APK's compiled manifest"</string>
+    <string name="pref_verbose_mode">Verbose</string>
+    <string name="pref_verbose_mode_summary">Enable verbose mode</string>
+    <string name="pref_copy_original_files">Match original</string>
+    <string name="pref_copy_original_files_summary">Keeps files as close to original as possible. Prevents rebuild.</string>
+    <string name="pref_use_v2_signature">Use V2 signature</string>
+    <string name="action_create_folder">Add Folder</string>
+    <string name="action_add_file">Add File</string>
+    <string name="action_add_new_lang">Add new language</string>
+    <string name="action_add_new_color">Add new color</string>
+    <string name="action_change_color">Change the color</string>
+    <string name="root_path">Root</string>
+    <string name="search_request">Search request</string>
+    <string name="caption_search_options">Search options</string>
+    <string name="label_ignore_case">Ignore Case</string>
+    <string name="label_re">Regular Exprensions</string>
+    <string name="label_ext">Extensions</string>
+    <string name="add_ext">Add Ext</string>
+    <string name="recursively">Recursively</string>
+    <string name="cannt_open_directory">Can`t open directory</string>
+    <string name="cannt_open_file">You do not have any apps that can open this type of file.</string>
+    <string name="about_title">About App</string>
+    <string name="about_source_licenses">Licenses</string>
+    <string name="about_website">Open Website</string>
+    <string name="about_git_hub">Open GitHub</string>
+    <string name="about_email">Send Email</string>
+    <string name="about_title_more">More Info</string>
+    <string name="installed_apps">Installed Apps</string>
+    <string name="menu_string">Strings</string>
+    <string name="menu_files">Files</string>
+    <string name="menu_find">Search</string>
+    <string name="complete">Complete</string>
+    <string name="toast_deleted_item">File %s has been deleted</string>
+    <string name="menu_build_app">Build</string>
+    <string name="menu_delete_project">Delete</string>
+    <string name="menu_about_project">About</string>
+    <string name="menu_note_project">Note</string>
+    <string name="error">Error</string>
+    <string name="enter_color_name">Enter a color name</string>
+    <string name="loading">Loading, please wait.</string>
+    <string name="image_viewer_subtitle_format" translatable="false">%d/%d</string>
+
+    <!--Signature-->
+    <string name="signature_file">Signature file</string>
+    <string name="signature_file_summary">The setting file (pk8 file or keystore file). If it is a pk8 file, will automatically generate an x509.pem file with the same name (for example, testkey.pk8 corresponds to testkey.x509.pem).</string>
+    <string name="signature_file_missing">Signature file \'%1$s\' hasn`t been found, using default signature!</string>
+    <string name="load_signature_file_fail">Unable to load signature file \'%1$s\'.</string>
+    <string name="enter_password">Enter password:</string>
+    <string name="key_type">Key Type:</string>
+    <string name="key_path">Key Path:</string>
+    <string name="cert_path">Cert Path:</string>
+    <string name="key_alias">Alias:</string>
+    <string name="store_pass">Keystore Password:</string>
+    <string name="key_pass">Private Key Password:</string>
+    <string name="jks">Keystore(JKS)</string>
+    <string name="pkcs12">Keystore(PKCS12)</string>
+    <string name="bks">Keystore(BKS)</string>
+    <string name="pk8">pk8+x509.pem</string>
+    <string name="date">Validity date:</string>
+    <string name="common_name">Common Name:</string>
+    <string name="organization_unit">Organization Unit:</string>
+    <string name="organization_name">Organization Name:</string>
+    <string name="locality_name">Locality Name:</string>
+    <string name="state_name">State Name:</string>
+    <string name="country">Country:</string>
+    <string name="gen_key_title">Create a key file</string>
+    <string name="gen_key_summary">Touch to create a key file.</string>
+    <string name="create_and_use">Create and use</string>
+    <!--FilePicker-->
+    <string name="toast_sd_card_not_found">SD Card not found!</string>
+    <string name="toast_error_grant_permisson_sd_card">Please select and grant permission sd card!</string>
+    <string name="error_dir_access">Dir Access</string>
+    <string name="label_parent_dir">...</string>
+    <string name="label_path">Path: </string>
+    <string name="cancel_button_label">Cancel</string>
+    <string name="choose_button_label">Select</string>
+    <string name="label_parent_directory">Parent folder</string>
+    <string name="select_directory">Select folder:</string>
+    <string name="label_date_ceared">Create Date</string>
+    <string name="label_last_date_write">Last Date Write</string>
+    <string name="label_size_prj">Project Size</string>
+    <string name="label_package_app">App Package</string>
+    <string name="select_file">Select File:</string>
+    <string name="files">Files</string>
+    <string name="label_search_string_in_files">Text in files</string>
+    <string name="dialog_add_extensions">Add Extensions</string>
+    <string name="dialog_please_wait">Please Wait...</string>
+    <string name="dialog_find">Searching</string>
+    <string name="dialog_deleting">Deleting</string>
+    <string name="dialog_loading_projects">Loading projects</string>
+
+    <string name="common_error">Error</string>
+    <string name="signer_permissions_denied">Permission Denied</string>
+    <string name="sign_done">Signing Done</string>
+    <string name="backup_search_splits_only">Split Only</string>
+    <string name="backup_search_show_system_apps">System Apps</string>
+    <string name="action_next_panel">Next</string>
+    <string name="action_replace_panel">Replace</string>
+    <string name="action_all_replace_panel">All</string>
+    <string name="action_prev_panel">Prev</string>
+    <string name="open_app_in_settings">Open In settings</string>
+    <string name="about_telegram">Telegram Channel</string>
+
+    <string name="compile_in_progress">Building...</string>
+    <string name="uninstall_app">Uninstall app</string>
+    <string name="language">Language</string>
+    <string name="lang_code">Language code</string>
+    <string name="lang_code_exapmle">For example: en-US</string>
+    <string name="color_name">Color name</string>
+    <string name="color_name_exapmle">For example: abc_color_name</string>
+    <string name="action_open_project">Open Project</string>
+    <string name="action_copy_log">Copy log</string>
+    <string name="error_decompilation_failed">Failed Decompilation</string>
+    <string name="decompile_finished">Decompilation finished</string>
+    <string name="error_build_failed">Build Failed</string>
+    <string name="build_successful">Build Successful</string>
+    <string name="dialog_color_picker">Pick a color</string>
+    <string name="action_select_lang">Select a language (%s)</string>
+    <string name="toast_files_deleted">%d files deleted</string>
+    <string name="toast_error_create_new_language">Failed to create new language</string>
+    <string name="toast_error_translate_language">Error while saving translation</string>
+    <string name="toast_error_pasring">Error while parsing xml</string>
+    <string name="toast_error_empty_find">Search request is empty!</string>
+    <string name="toast_error_not_selectable">Can`t select</string>
+    <string name="build_run_title">Building app</string>
+    <string name="selected">%d selected</string>
+    <string name="search_for">Search for %s</string>
+    <string name="sort_by">Sort by</string>
+    <string name="sort_by_name">Name</string>
+    <string name="sort_by_date">Last modified</string>
+    <string name="sort_by_size">Size (high to low)</string>
+    <string name="toast_error_directory_not_exits">Directory doesn`t exist</string>
+    <string name="toast_error_new_language_is_exits">Selected language is already exists!</string>
+    <string name="title_activity_exception">App has crashed</string>
+    <string name="about_telegram_sponsor" translatable="false">EasyAPK</string>
+    <string name="title_select_mail_app">Send log using:</string>
+    <string name="pref_hide_know_extensions_summary">For known file types</string>
+    <string name="select_key">Select key:</string>
+    <string name="caption_string_search_options">String search options</string>
+    <string name="action_create_new_folder">Create new folder</string>
+    <string name="toast_project_deleted">Project %s has been deleted</string>
+    <string name="toast_deleted_dictionary">Dictionary %s has been deleted</string>
+    <string name="toast_error_on_delete_file">Error while deleting a file!</string>
+    <string name="toast_error_on_add_folder">Error while adding a folder!</string>
+    <string name="toast_error_on_rename">Error while renaming a file!</string>
+    <string name="build_apk_saved_to">File saved to: %s</string>
+    <string name="label_path_project">Path</string>
+    <string name="action_simple_edit">Simple Editor</string>
+    <string name="app_name_hint">App Name</string>
+    <string name="package_name_hint">Package Name</string>
+    <string name="version_code_hint">Version Code</string>
+    <string name="version_name_hint">Version Name</string>
+    <string name="minimum_sdk_version_hint">Minimum SDK Version</string>
+    <string name="target_sdk_version_hint">Target SDK Version</string>
+    <string name="rename_package_in_resource">Rename the package name in resources.arsc</string>
+    <string name="rename_package_in_dex">Rename package in dex file(s)</string>
+    <string name="simple_edit_app">Simple Edit</string>
+    <string name="toast_error_in_decompile_installed_app">Error while decompiling installed app!</string>
+    <string name="toast_error_in_simple_edit_installed_app">Error while editing an installed app!</string>
+    <string name="select_icon">Select a new icon</string>
+    <string name="toast_error_cant_parse_apk">Error while parsing an apk!</string>
+    <string name="install_location">Install Location</string>
+    <string name="install_location_default">Default (Not Specified)</string>
+    <string name="install_location_auto">Auto (OS Make Decision)</string>
+    <string name="install_location_internal">Internal Only</string>
+    <string name="install_location_external">Prefer External</string>
+    <string name="about_telegram_developer_mrikso">MrIkso - Developer</string>
+    <string name="about_telegram_developer_phoenix">Phoenix.Ltd - Developer</string>
+    <string name="about_telegram_sponsor_alex_modz">Alex.Strannik - lite modz</string>
+    <string name="toast_error_sign_failed">Error while signing an apk!</string>
+    <string name="dialog_sign">Signing...</string>
+    <string name="sign_app">Sign Apk</string>
+    <string name="toast_sign_done">Sign done</string>
+    <string name="items">%d items</string>
+    <string name="select_patch">Select patch</string>
+    <string name="action_sd_card">External SD Card</string>
+    <string name="intenal_sd_card">Internal SD Card</string>
+    <string name="pref_show_hidden_files">Show hidden files</string>
+    <string name="pref_keep_screen_on">Keep screen on</string>
+    <string name="toast_error_import_framework_failed">Error while import a framework!</string>
+    <string name="install_as_framework">Import as framework</string>
+    <string name="toast_import_framework_done">Framework successfully imported</string>
+    <string name="dialog_import">Importing..</string>
+    <string name="project">File tree</string>
+    <string name="select_from_storage">Select from storage</string>
+    <string name="action_create_xml">Create xml file</string>
+    <string name="action_create_class">Create smali class file</string>
+    <string name="class_name">Class name</string>
+    <string name="editor_theme">Editor theme</string>
+    <string name="selected_editor_theme">Selected %s. Restart app to apply theme.</string>
+    <string name="toast_apk_succes_edited">Apk successful builded!</string>
+    <string name="toast_apk_falied_edited">Apk falied edited!</string>
+    <string name="toast_error_decompile_smali_to_java">Error on decompile smali to java!</string>
+    <string name="show_decompile_option_dialog">Show dialog for choosing decompilation mode</string>
+    <string name="string_name_copied">String name copied: %s</string>
+    <string name="color_name_copied">Color name copied: %s</string>
+    <!--auto translator-->
+    <string name="stop">Stop</string>
+    <string name="save_and_close">Save &amp; Close</string>
+    <string name="translating">Translating &#8230;</string>
+    <string name="translated">Translated</string>
+    <string name="translated_format">%d strings translated</string>
+    <string name="failed_format">%d strings failed</string>
+    <string name="untranslated_format">%d strings untranslated</string>
+    <string name="error_no_string_totranslate">No string needs to be translated.</string>
+    <string name="save_translation_title">Save the translation?</string>
+    <string name="save_translation_msg">The translation is not saved yet. Save it before further operation?</string>
+    <string name="string_notsaved_msg">%d strings are discarded.</string>
+    <string name="title_activity_auto_translator">Auto Translator</string>
+    <string name="action_auto_translate_lang">Auto translate language</string>
+    <string name="error_no_string_tosave">No string to save!</string>
+    <string name="pref_confirm_build">Build Confirmation</string>
+    <string name="confirm_build_title">Build this app?</string>
+    <string name="pref_use_auto_theme">Auto Theme</string>
+    <string name="dialog_select_theme">Select Theme</string>
+
+    <string name="theme_rena">Rena</string>
+    <string name="theme_rena_light">Rena Light</string>
+    <string name="theme_cyan">Cyan Material</string>
+    <string name="theme_cyan_light">Cyan Material Light</string>
+    <string name="theme_dynamic">Dynamic</string>
+    <string name="theme_dynamic_light">Dynamic Light</string>
+   
+    <string name="theme_mint">Mint</string>
+
+    <string name="auto_theme_title">Select dark and light themes</string>
+    <string name="auto_theme_light_theme">Light theme</string>
+    <string name="auto_theme_dark_theme">Dark theme</string>
+    <string name="auto_theme_selection_hint">Tap to change</string>
+
+    <string name="settings_main_auto_theme">Auto theme</string>
+    <string name="settings_main_auto_theme_summary">Automatically switch between selected light and dark themes depending on system theme</string>
+    <string name="settings_main_auto_theme_picker">Choose themes</string>
+    <string name="settings_main_auto_theme_picker_summary">Current light theme: %s\nCurrent dark theme: %s</string>
+    <string name="settings_main_auto_theme_pre_q_warning">Please note that following the system theme may not work correctly on Android versions lower than Q</string>
+    <string name="action_copy_path">Copy path</string>
+    <string name="replace_request">Replace request</string>
+    <string name="replace_in_file_title">Replace in File</string>
+    <string name="replaced_successful">Replaced in File!</string>
+    <string name="directory">Directory</string>
+    <string name="this_folder_is_empty">Folder empty</string>
+    <string name="need_to_enable_read_storage_permissions">Needs your permission to access storage</string>
+    <string name="title_my_files">My Files</string>
+    <string name="action_select_all">Select All</string>
+    <string name="directory_created_sucess">Directory created success!</string>
+    <string name="deleting">Deleting..</string>
+    <string name="copied_file_name">Copy of %s</string>
+    <string name="copied_file_name_2">Copy %1$d of %2$s</string>
+    <string name="file_exists">File exits</string>
+    <string name="action_create_new_file">Create new file</string>
+    <string name="file_created_sucess">File created success!</string>
+    <string name="preview">Preview</string>
+    <string name="filename_pattern">Pattern</string>
+    <string name="start_numbering_at">Start numbering at</string>
+    <string name="variable_current_date">Current date</string>
+    <string name="variable_current_time">Current time</string>
+    <string name="variable_digit">Digit</string>
+    <string name="variable_file_date">File date</string>
+    <string name="variable_file_extension">File extension</string>
+    <string name="variable_file_name">File name</string>
+    <string name="variable_file_name_with_extension">File name + extension</string>
+    <string name="variable_file_size">File size</string>
+    <string name="variable_file_time">File time</string>
+    <string name="action_copy_name">Copy name</string>
+    <string name="action_copy_id">Copy ID</string>
+    <string name="notif_copying_item">Copying %1$s to %2$s.</string>
+    <string name="notif_space_more">You need %1$s more.</string>
+    <string name="notif_moving_item">Moving %1$s to %2$s.</string>
+    <string name="notif_title_operations">File operations</string>
+    <string name="copying">Copying&#8230;</string>
+    <string name="copied">Successfully copied</string>
+    <string name="copy_error">Some or all items couldn\'t be copied!</string>
+    <string name="moving">Moving&#8230;</string>
+    <string name="moved">Successfully moved</string>
+    <string name="move_error">Some or all items couldn\'t be moved!</string>
+    <string name="title_apk_options">Apk Options</string>
+    <string name="title_file_options">File Options</string>
+    <string name="title_home">Home</string>
+    <string name="about_check_updates">Check for updates</string>
+    <string name="management">Management</string>
+    <string name="title_build_apk">Build Apk</string>
+    <string name="step">Step %d/%d: %s</string>
+    <string name="action_show_log">Show log</string>
+    <string name="toast_copy_to_clipboard">Copied to clipboards</string>
+    <string name="confirm_delete">Delete this file(s)?</string>
+    <string name="action_apply_patch">Apply Patches</string>
+    <string name="add_patch">Add Patch</string>
+    <string name="title_patcher">Patcher</string>
+    <string name="action_add_new_string">Add new string</string>
+    <string name="action_save_as_dictionary">Save as dictionary</string>
+    <string name="action_auto_translate_lang_dictionary">Translate with dictionary</string>
+    <string name="action_more">More options</string>
+    <string name="value">Value</string>
+    <string name="key">Key</string>
+    <string name="app_compile_elapsed_time">App buided in %s</string>
+    <string name="dialog_dictionary_name">Enter dictionary name</string>
+    <string name="dialog_warring">Warring</string>
+    <string name="dialog_warring_save_changes">Do you want to save the changes?</string>
+    <string name="apply_to_all_files">Apply to all files</string>
+    <string name="caption_string_replace_options">Replace options</string>
+    <string name="functions">Functions</string>
+    <string name="clear_search_result">Clear search results</string>
+    <string name="search_result">search result (%d) - %s</string>
+    <string name="replace_in_files_title">Replace in all files</string>
+    <string name="toast_replace_in_files">Replaced in %d files</string>
+    <string name="label_skip_translated">Skip translated lines</string>
+    <string name="select_translate_dictionary">Select translate dictionary:</string>
+    <string name="label_reverse_dictionary">Inverse translations</string>
+    <string name="translating_run_title">Translating app</string>
+    <string name="string_id_copied">String id \"%s\" copied to clipboard</string>
+    <string name="label_skip_support_lines">Skip support lines</string>
+    <string name="close_unchanged">Close Unchanged</string>
+    <string name="clear_translated">Clear Translated</string>
+    <string name="action_delete_strings">Delete string</string>
+    <string name="copy_original_value">Copy original value</string>
+  
+    <string name="pref_update_category">Check update</string>
+    <string name="pref_update_preference">Check Update</string>
+    <string name="pref_update_list">Update Channel</string>
+    <string name="pref_update_switch">Update on startup</string>
+    <string name="fd_title">Changelog</string>
+	<string name="fd_message">• App redesign (import AndroidX Library)\n• Update Android framework to API 30\n• Added a new theme change with auto support.\n• Added about tab (credits to various modders of the 4PDA Forum)\n• Added the ability to create templates\n• Added syntax colors settings and ColorPicker\n• Added the ability to clear search history for strings, resources and manifest\n• Added new icons for different extensions: zip, html, smali and etc\n• Added settings for displaying elements of the main screen, so far in hidden settings: long press on the heading “Settings”\n• Added ProgressBar during patch execution\n• Auto display keyboard and auto selected text on translate of string\n• Removed side menu, image loading, help, and WebView in translation plugin and patch dialogs (window opens faster).\n• Deleted full screen option and orientation in code\n• Bug fixes (like navigation folder not compile) and others\n• Various changes and cleanings</string>
+    <string name="fd_ok">Ok</string>
+    <plurals name="menu_copy_items_to">
+        <item quantity="one">Copy %1$d item here</item>
+        <item quantity="other">Copy %1$d items here</item>
+    </plurals>
+    <plurals name="menu_move_items_to">
+        <item quantity="one">Move %1$d item here</item>
+        <item quantity="other">Move %1$d items here</item>
+    </plurals>
+    <plurals name="file_list_subtitle_directory_count_format">
+        <item quantity="one">%1$,d folder</item>
+        <item quantity="other">%1$,d folders</item>
+    </plurals>
+    <plurals name="file_list_subtitle_file_count_format">
+        <item quantity="one">%1$,d file</item>
+        <item quantity="other">%1$,d files</item>
+    </plurals>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ColorEditorFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?colorPrimary"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/search_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:stateListAnimator="@animator/appbar_elevation">
+
+            <include
+                layout="@layout/search_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/checkbox_dimens"
+                android:layout_margin="@dimen/checkbox_margin" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/colors"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/list_padding"
+            tools:listitem="@layout/item_color" />
+    </LinearLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="end|bottom"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        fab:menu_animationDelayPerItem="0"
+        fab:menu_colorRipple="?colorSelected"
+        fab:menu_colorNormal="?colorAccent"
+        fab:menu_colorPressed="?colorAccent"
+        fab:menu_icon="@drawable/ic_add_white"
+        fab:menu_labels_ellipsize="end"
+        fab:menu_labels_maxLines="2">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_go_editor"
+            style="@style/MenuButtonsSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_rename"
+            fab:fab_label="@string/action_open_in_editor" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_add_color"
+            style="@style/MenuButtonsSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_white"
+            fab:fab_label="@string/action_add_new_color" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</FrameLayout>

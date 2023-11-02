@@ -1,0 +1,81 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.AppsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:windowBackground"
+            android:stateListAnimator="@animator/appbar_elevation"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <include
+                layout="@layout/search_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/checkbox_dimens"
+                android:layout_margin="@dimen/checkbox_margin" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/normal_padding"
+                android:layout_marginEnd="@dimen/normal_padding">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_filter_splits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/backup_search_splits_only"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    app:chipBackgroundColor="?colorAccent" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_filter_system"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/backup_search_show_system_apps"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="?colorAccent" />
+            </com.google.android.material.chip.ChipGroup>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                layout="@layout/loading_view"
+                android:id="@+id/loading_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/app_packages"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingBottom="@dimen/list_padding"
+                tools:listitem="@layout/item_apps" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

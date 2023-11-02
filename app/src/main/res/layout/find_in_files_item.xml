@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/find_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/checkbox_margin"
+    android:background="?selectableItemBackground">
+
+    <ImageView
+        android:src="@drawable/ic_arrow_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:visibility="gone"
+        android:id="@+id/mark"/>
+
+    <TextView
+        android:id="@+id/file_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        android:drawablePadding="5dp"
+        android:drawableEnd="@drawable/ic_arrow_down"
+        tools:text="File name"
+        android:textStyle="bold" />
+</LinearLayout>
