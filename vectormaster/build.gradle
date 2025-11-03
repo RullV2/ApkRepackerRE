@@ -27,6 +27,7 @@ ext {
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
+    namespace 'com.sdsmdg.harjot.vectormaster'
 
     defaultConfig {
         minSdkVersion 21
