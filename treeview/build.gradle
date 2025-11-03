@@ -3,7 +3,7 @@ apply plugin: 'com.android.library'
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
-    
+    namespace 'com.unnamed.b.atv'
 
     defaultConfig {
         minSdkVersion rootProject.ext.minSdkVersion
