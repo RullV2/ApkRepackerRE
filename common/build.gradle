@@ -8,6 +8,10 @@ android {
     defaultConfig {
         minSdkVersion rootProject.ext.minSdkVersion
     }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_24
+        targetCompatibility = JavaVersion.VERSION_24
+    }
 
 }
 

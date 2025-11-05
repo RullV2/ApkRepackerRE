@@ -16,6 +16,10 @@ android {
         abortOnError false
         checkReleaseBuilds false
     }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_24
+        targetCompatibility = JavaVersion.VERSION_24
+    }
     sourceSets {
         main.res.srcDirs = [
             'src/main/res',

@@ -11,6 +11,10 @@ android {
         versionCode 1// Integer.parseInt(VERSION_CODE)
         versionName "1.0"// VERSION_NAME
     }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_24
+        targetCompatibility = JavaVersion.VERSION_24
+    }
     buildTypes {
         release {
             minifyEnabled false
