@@ -34,4 +34,4 @@ buildscript {
         classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
     }
 }
-apply from: '../bintray-android.gradle'
+
